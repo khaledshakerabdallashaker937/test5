@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title> Document </title>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="header">
+        <h1 class="text-center">Bookmarker</h1>
+        <div class="position">
+        </div>
+      </div>
+
+
+      <hr class="dashed">
+
+      <h3 class="text-center"><span> <i class="fa-regular fa-bookmark"></i> </span> Bookmark your favorite sites
+        <span><i class="fa-regular fa-bookmark"></i> </span>
+      </h3>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="container">
+
+      <div class="mb-3">
+        <label for="siteName" class="form-label">
+          <p> <span> <i class="fa-regular fa-bookmark"></i> </span> Site Name</p>
+        </label>
+        <input type="name" class="form-control" id="siteName" placeholder="BookMark Name">
+      </div>
+
+      <div class="mb-3">
+        <label for="siteUrl" class="form-label">
+          <p> <span> <i class="fa-solid fa-link"></i></span> site link </p>
+        </label>
+        <input type="email" class="form-control" id="siteUrl" aria-describedby="emailHelp" placeholder="WebSite Url">
+        <div id="emailHelp" class="form-text">enter your site url . </div>
+      </div>
+
+
+      <div class="center-button">
+
+
+        <button id="submitBtn" class="btn btn-danger rounded-2 px-2 my-2 d-block"
+          class="btn btn-danger center-button ">Submit</button>
+        <button id="updateBtn" class="btn btn-danger rounded-2 px-2 my-2 d-block d-none" onclick="finalUpdate();"
+          class="btn btn-danger center-button "> update </button>
+      </div>
+
+      <hr class="dashed">
+
+      <div class="search d-flex align-items-center">
+        <input id="search" type="search" class="form-control" placeholder="Search By Site Name">
+
+      </div>
+
+      <table class="table text-center mt-4">
+        <thead>
+          <th> index</th>
+          <th>website Name</th>
+          <th>visit </th>
+          <th> update</th>
+          <th> delete </th>
+        </thead>
+        <tbody id="tBody">
+
+
+
+
+
+
+        </tbody>
+
+      </table>
+
+
+    </div>
+
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script src="js/js.js"> </script>
+</body>
+
+</html>
